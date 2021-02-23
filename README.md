@@ -30,3 +30,10 @@ Attribution
 ------------
 
 Codes and ideas are integrated from [bash-wakatime](https://github.com/irondoge/bash-wakatime), [powerwaka](https://github.com/iamkarlson/powerwaka), [posh-git](https://github.com/dahlbyk/posh-git), [conda(powershell)](https://github.com/conda/conda/blob/master/conda/shell/condabin/Conda.psm1).
+
+TODOs
+------------
+ - [ ] Submission to WakaTime.com
+ - [ ] Auto-installation of WakaTime CLI in the module path, rather than using the one in path. (Will provide better robustness)
+ - [ ] Correct attribution to contributors.
+
