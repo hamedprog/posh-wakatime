@@ -1,6 +1,8 @@
 Powershell plugin for wakatime
 =======================
 
+[![time tracker](https://wakatime.com/badge/github/Gravifer/posh-wakatime.svg)](https://wakatime.com/badge/github/Gravifer/posh-wakatime)
+
 Automatic time tracking for commands in Powershell using [wakatime](http://wakatime.com/).
 
 Installation
