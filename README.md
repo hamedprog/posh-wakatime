@@ -13,7 +13,7 @@ Make sure you have configured wakatime API key in your [~/.wakatime.cfg](https:/
 1. `pip install wakatime` to install wakatime CLI, with 4.1 or higher. See more [here](https://github.com/wakatime/wakatime) for wakatime CLI.
 
 2. For PSGallery users:
-  -Install directly from PSGallery; import this in your `$profile`.
+  - [Install directly from PSGallery](https://www.powershellgallery.com/packages/posh-wakatime); import this in your `$profile`.
 
 3. For GitHub users:
   - git clone https://github.com/Gravifer/posh-wakatime.git
