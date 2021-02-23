@@ -10,15 +10,21 @@ Make sure you have configured wakatime API key in your [~/.wakatime.cfg](https:/
 
 1. `pip install wakatime` to install wakatime CLI, with 4.1 or higher. See more [here](https://github.com/wakatime/wakatime) for wakatime CLI.
 
-2. For Powershell users:
-  - git clone https://github.com/Gravifer/posh-wakatime.git
+2. For PSGallery users:
+  -Install directly from PSGallery; import this in your `$profile`.
 
-  - include the "Powershell-wakatime.sh" file in your `$profile` file
-  - 
+3. For GitHub users:
+  - git clone https://github.com/Gravifer/posh-wakatime.git
+  - include the "Powershell-wakatime.sh" file in your `$profile` file.
   - But if you already have a PROMPT_COMMAND variable set,
     just merge yout own pre_prompt_command with the following one.
     And don't forget to create and configure your "~/.wakatime.cfg" file.
 
-3. Open a new terminal and type commands
+4. Open a new terminal and type commands
 
-4. Visit https://wakatime.com/project/Terminal
+5. Visit https://wakatime.com/project/Terminal
+
+Attribution
+------------
+
+Codes and ideas are integrated from bash-wakatime, pwshwaka, posh-git, code(powershell).
