@@ -29,4 +29,4 @@ Make sure you have configured wakatime API key in your [~/.wakatime.cfg](https:/
 Attribution
 ------------
 
-Codes and ideas are integrated from bash-wakatime, pwshwaka, posh-git, code(powershell).
+Codes and ideas are integrated from [bash-wakatime](https://github.com/irondoge/bash-wakatime), [powerwaka](https://github.com/iamkarlson/powerwaka), [posh-git](https://github.com/dahlbyk/posh-git), [conda(powershell)](https://github.com/conda/conda/blob/master/conda/shell/condabin/Conda.psm1).
