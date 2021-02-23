@@ -33,7 +33,7 @@ if (Test-Path Function:\prompt) {
 
 function Test-Wakatime {return $(if($(where.exe wakatime)) {$True} else {$False})}
 
-if (!$env:wakaDebug) {$env:wakaDebug = $False}
+if (!$env:wakaDebug) {$env:wakaDebug = $True}
 
 function Send-WakaTimeHeartbeat(){
     if (!$(where.exe wakatime)) {return;}
@@ -55,9 +55,7 @@ function Send-WakaTimeHeartbeat(){
 
         Write-Host "Sending wakatime"
         Write-Host "Waka command: $command"
-        if($command -eq "") {
-            return;
-        }
+        if($command -eq "") {return;}
 
         $PLUGIN_VERSION = "0.1";
 
@@ -67,16 +65,16 @@ function Send-WakaTimeHeartbeat(){
         $wakaCommand+= ' --entity "'
         $wakaCommand+=  $command
         $wakaCommand+= '" '
-        $wakaCommand+= ' --language "PowerShell"'
+        $wakaCommand+= ' --language "PowerShell" '
 
         if($null -eq $gitFolder){
-            $wakaCommand =$wakaCommand + ' --project "'
+            $wakaCommand =$wakaCommand + ' --project '
             $wakaCommand =$wakaCommand + 'Terminal'
         } else {
             $gitFolder = (Get-Item ($gitFolder).Replace(".git",""))
             $wakaCommand =$wakaCommand + ' --project "'
             $wakaCommand =$wakaCommand + $gitFolder.Name
-            $wakaCommand =$wakaCommand + '"'
+            $wakaCommand =$wakaCommand + '" '
         }
         Write-Host "wakaDebug: $Env:wakaDebug"
         $wakaCommand
@@ -86,7 +84,6 @@ function Send-WakaTimeHeartbeat(){
         Invoke-Expression $wakaCommand
     } -ArgumentList $command, $gitFolder
 }
-
 
 function Send-HeartbeatAtPrompt() {
     function global:prompt() {

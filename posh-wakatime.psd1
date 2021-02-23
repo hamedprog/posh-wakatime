@@ -21,19 +21,19 @@ ModuleVersion = '0.0.1'
 GUID = 'a8556d28-dab1-4144-b121-7c80dae1f561'
 
 # Author of this module
-Author = 'FangTci'
+Author = 'Gravifer'
 
 # Company or vendor of this module
 CompanyName = 'Unknown'
 
 # Copyright statement for this module
-Copyright = '(c) FangTci. All rights reserved.'
+Copyright = '(c) Gravifer. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'WakaTime plug-in for PowerShell'
 
 # Minimum version of the PowerShell engine required by this module
-# PowerShellVersion = ''
+PowerShellVersion = '5.0'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
@@ -51,7 +51,7 @@ Copyright = '(c) FangTci. All rights reserved.'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @("posh-git")
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -84,7 +84,7 @@ AliasesToExport = @()
 # DscResourcesToExport = @()
 
 # List of all modules packaged with this module
-# ModuleList = @()
+ModuleList = @("posh-wakatime")
 
 # List of all files packaged with this module
 # FileList = @()
@@ -95,13 +95,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        # Tags = @("")
 
         # A URL to the license for this module.
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/Gravifer/pwsh-wakatime'
 
         # A URL to an icon representing this module.
         # IconUri = ''
@@ -123,7 +123,7 @@ PrivateData = @{
 } # End of PrivateData hashtable
 
 # HelpInfo URI of this module
-# HelpInfoURI = ''
+# HelpInfoURI = 'https://github.com/Gravifer/pwsh-wakatime'
 
 # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
 # DefaultCommandPrefix = ''
